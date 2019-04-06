@@ -1,6 +1,6 @@
 {
     "name": "vamtiger-social-media-icon",
-    "version": "0.0.2",
+    "version": "0.0.3-0",
     "description": "VAMTIGER Social Media Icon",
     "main": "build",
     "scripts": {
@@ -26,7 +26,8 @@
         "watch-css": "npm run bundle-css -- --watch",
         "watch": "vamtiger-watch --folder source --extension ts --script test --extension html --script bundle-html --extension css --script bundle-css",
         "serve": "npm run test && cd build && python -m SimpleHTTPServer",
-        "install-source": "npm i --save-dev vamtiger-browser-method@source"
+        "install-source": "npm i --save-dev vamtiger-browser-method@source",
+        "postinstall": "vamtiger-postinstall --distTag source"
     },
     "keywords": [
         "vamtiger",
@@ -59,5 +60,8 @@
         "vamtiger-remove": "0.0.5",
         "vamtiger-watch": "^1.3.1"
     },
-    "repository": "https://github.com/vamtiger-project/vamtiger-social-media-icon.git"
+    "repository": "https://github.com/vamtiger-project/vamtiger-social-media-icon.git",
+    "dependencies": {
+        "vamtiger-postinstall": "^0.18.1"
+    }
 }
