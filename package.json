@@ -1,6 +1,6 @@
 {
     "name": "vamtiger-social-media-icon",
-    "version": "0.0.1",
+    "version": "0.0.2-0",
     "description": "VAMTIGER Social Media Icon",
     "main": "build",
     "scripts": {
@@ -61,4 +61,3 @@
     },
     "repository": "https://github.com/vamtiger-project/vamtiger-social-media-icon.git"
 }
-
