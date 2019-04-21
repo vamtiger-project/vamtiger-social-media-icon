@@ -1,4 +1,3 @@
-import loadScript from '../node_modules/vamtiger-browser-method/source/load-script';
 import {
     Selector,
     ObservedAttribute
@@ -11,6 +10,8 @@ import {
 } from './config';
 import loadIcon from './load-icon';
 
+const { VamtigerBrowserMethod } = window;
+const { loadScript } = VamtigerBrowserMethod;
 export const name = 'vamtiger-social-media-icon';
 
 css && loadScript({ name, css })
