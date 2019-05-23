@@ -9,6 +9,9 @@ svg
 
 vamtiger-social-media-icon
 {
+    opacity: 0;
+    transition: opacity 275ms linear;
+
     & [slot="vamtiger-social-media-icon"],
     & [slot="vamtiger-social-media-icon"] svg
     {
@@ -25,4 +28,9 @@ vamtiger-social-media-icon
     {
         transition: fill 175ms linear;
     }
+}
+
+vamtiger-social-media-icon[data-loaded]
+{
+    opacity: 1;
 }
