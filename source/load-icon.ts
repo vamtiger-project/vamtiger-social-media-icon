@@ -30,7 +30,7 @@ export default async function ({ element }: ILoadIcon) {
             'data-json-ld': jsonLdUrl
         }
     });
-    const inconLoadedEvent = new CustomEvent(
+    const iconLoadedEvent = new CustomEvent(
         EventName.iconLoaded,
         eventParams
     );
@@ -54,7 +54,7 @@ export default async function ({ element }: ILoadIcon) {
 
     function handleLoad(event: Event) {
         (vamtigerResponsiveSvg as HTMLElement).removeEventListener('svgLoaded', handleLoad);
-        (vamtigerResponsiveSvg as HTMLElement).dispatchEvent(inconLoadedEvent);
+        (vamtigerResponsiveSvg as HTMLElement).dispatchEvent(iconLoadedEvent);
         setFillColor({ element });
 
         dataset.loaded = nothing;
