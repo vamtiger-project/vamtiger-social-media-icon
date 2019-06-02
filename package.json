@@ -2,7 +2,7 @@
     "name": "vamtiger-social-media-icon",
     "version": "0.6.0",
     "description": "VAMTIGER Social Media Icon",
-    "main": "build",
+    "main": "build/vamtiger-social-media-icon",
     "scripts": {
         "test": "npm run clean && npm run build && npm run bundle-node-test && npm run bundle-browser-test && npm run mocha && npm run bundle-source",
         "mocha": "mocha build/test/node --recursive",

@@ -1,4 +1,4 @@
-import * as VamtigerBrowserSupport from 'vamtiger-browser-method/build/types';
+import * as VBM from 'vamtiger-browser-method/build/types';
 import VamtigerSocialMediaIcon from './element';
 
 export enum StringConstant {
