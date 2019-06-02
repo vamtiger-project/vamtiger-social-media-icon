@@ -13,21 +13,25 @@ export enum Selector {
     figcaption = 'figcaption',
     facebook = 'figure[data-facebook]',
     twitter = 'figure[data-twitter]',
+    youtube = 'figure[data-youtube]',
     instagram = 'figure[data-instagram]',
     iconPath = 'svg > path',
-    vamtigerResponsiveSvg = 'vamtiger-responsive-svg'
+    vamtigerResponsiveSvg = 'vamtiger-responsive-svg',
+    youtubeTriangle = 'svg > [data-triangle]'
 }
 
 export enum IconFigure {
     twitter = 'twitter',
     instagram = 'instagram',
-    facebook = 'facebook'
+    facebook = 'facebook',
+    youtube = 'youtube'
 }
 
 export enum JsonLd {
     twitter = 'https://unpkg.com/vamtiger-twitter-icon-json-ld@latest',
     facebook = 'https://unpkg.com/vamtiger-facebook-icon-json-ld@latest',
-    instagram = 'https://unpkg.com/vamtiger-instagram-icon-json-ld@latest'
+    instagram = 'https://unpkg.com/vamtiger-instagram-icon-json-ld@latest',
+    youtube = 'https://unpkg.com/vamtiger-youtube-icon-json-ld@latest'
 }
 
 export enum EventName {
@@ -59,7 +63,9 @@ export interface IDataset extends DOMStringMap {
     twitter?: IconFigure.twitter;
     facebook?: IconFigure.facebook;
     instagram?: IconFigure.instagram;
+    youtube?: IconFigure.youtube;
     color?: string;
+    triangleColor?: string;
     hoverColor?: string;
     loaded?: string;
 }
@@ -84,6 +90,7 @@ export type GetTemplate<P extends IGetTemplate> =
         | Selector.figcaption
         | Selector.facebook
         | Selector.twitter
+        | Selector.youtube
         | Selector.instagram
         | Selector.figcaption
         | Selector.vamtigerResponsiveSvg

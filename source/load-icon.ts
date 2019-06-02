@@ -22,7 +22,8 @@ export default async function ({ element }: ILoadIcon) {
     const dataset = element.dataset as IDataset;
     const jsonLdUrl = dataset.hasOwnProperty(IconFigure.twitter) && JsonLd.twitter
         || dataset.hasOwnProperty(IconFigure.facebook) && JsonLd.facebook
-        || dataset.hasOwnProperty(IconFigure.instagram) && JsonLd.instagram;
+        || dataset.hasOwnProperty(IconFigure.instagram) && JsonLd.instagram
+        || dataset.hasOwnProperty(IconFigure.youtube) && JsonLd.youtube;
     const vamtigerResponsiveSvg = jsonLdUrl && getTemplate({
         selector: Selector.vamtigerResponsiveSvg,
         attributes: {

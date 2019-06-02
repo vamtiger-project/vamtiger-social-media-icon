@@ -7,11 +7,17 @@ import {
 export default function({ element }: ISetFillColor) {
     const dataset = element.dataset as IDataset;
     const {
-        color
+        color,
+        triangleColor
     } = dataset;
     const iconPath = element.querySelector<SVGPathElement>(Selector.iconPath);
+    const youtubeTriangle = element.querySelector<SVGPolygonElement>(Selector.youtubeTriangle);
 
     if (iconPath && color) {
         iconPath.style.fill = color;
+    }
+
+    if (youtubeTriangle && triangleColor) {
+        youtubeTriangle.style.fill = triangleColor;
     }
 }
