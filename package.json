@@ -1,6 +1,6 @@
 {
     "name": "vamtiger-social-media-icon",
-    "version": "0.4.1",
+    "version": "0.5.0",
     "description": "VAMTIGER Social Media Icon",
     "main": "build",
     "scripts": {
@@ -25,7 +25,7 @@
         "watch-html": "npm run bundle-html -- --watch",
         "watch-css": "npm run bundle-css -- --watch",
         "watch": "vamtiger-watch --folder source --extension ts --script test --extension html --script bundle-html --extension css --script bundle-css",
-        "serve": "npm run test && cd build && python -m SimpleHTTPServer"
+        "serve": "npm run test && cd build && python -m SimpleHTTPServer 8889"
     },
     "keywords": [
         "vamtiger",
