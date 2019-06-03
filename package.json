@@ -25,7 +25,7 @@
         "watch-html": "npm run bundle-html -- --watch",
         "watch-css": "npm run bundle-css -- --watch",
         "watch": "vamtiger-watch --folder source --extension ts --script test --extension html --script bundle-html --extension css --script bundle-css",
-        "serve": "npm run test && cd build && python -m SimpleHTTPServer 8889"
+        "serve": "npm run test && cd build && python -m SimpleHTTPServer"
     },
     "keywords": [
         "vamtiger",
